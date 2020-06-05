@@ -6,10 +6,15 @@ public class CommentsInfo {
     private int userId;
     private int dateOfComment;
     private String text;
-    private boolean canComment;
+    private boolean canPost;
     private boolean canLike;
     private int countOfLikes;
     private boolean topComment;
+    private int groupsCanPost;
+    private boolean canClose;
+    private boolean canOpen;
+
+
 
     public int getCount() {
         return count;
@@ -51,12 +56,12 @@ public class CommentsInfo {
         this.text = text;
     }
 
-    public boolean isCanComment() {
-        return canComment;
+    public boolean isCanPost() {
+        return canPost;
     }
 
-    public void setCanComment(boolean canComment) {
-        this.canComment = canComment;
+    public void setCanPost(boolean canPost) {
+        this.canPost = canPost;
     }
 
     public boolean isCanLike() {
@@ -83,4 +88,27 @@ public class CommentsInfo {
         this.topComment = topComment;
     }
 
+    public int getGroupsCanPost() {
+        return groupsCanPost;
+    }
+
+    public void setGroupsCanPost(int groupsCanPost) {
+        this.groupsCanPost = groupsCanPost;
+    }
+
+    public boolean isCanClose() {
+        return canClose;
+    }
+
+    public void setCanClose(boolean canClose) {
+        this.canClose = canClose;
+    }
+
+    public boolean isCanOpen() {
+        return canOpen;
+    }
+
+    public void setCanOpen(boolean canOpen) {
+        this.canOpen = canOpen;
+    }
 }
