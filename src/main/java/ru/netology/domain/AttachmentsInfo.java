@@ -2,7 +2,7 @@ package ru.netology.domain;
 
 public class AttachmentsInfo {
     private int id;
-    private String AttachmentUrl;
+    private String attachmentUrl;
     private String imageUrl;
 
     public int getId() {
@@ -14,11 +14,11 @@ public class AttachmentsInfo {
     }
 
     public String getAttachmentUrl() {
-        return AttachmentUrl;
+        return attachmentUrl;
     }
 
     public void setAttachmentUrl(String attachmentUrl) {
-        AttachmentUrl = attachmentUrl;
+        this.attachmentUrl = attachmentUrl;
     }
 
     public String getImageUrl() {
@@ -28,4 +28,5 @@ public class AttachmentsInfo {
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
     }
+
 }
